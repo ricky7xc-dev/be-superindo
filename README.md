@@ -21,5 +21,14 @@ php artisan migrate:fresh --seed
 php artisan serve
 ```
 
+```bash
+Login info
+Admin :
+admin@gmail.com
+123456
+User :
+user@gmail.com 
+123456
+```
 
 # be-superindo
