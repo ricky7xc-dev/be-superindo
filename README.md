@@ -14,10 +14,12 @@ setup env sesuai dengan database (postgresql)
 
 jalankan :
 
+```bash
 composer install
 php artisan storage:link
 php artisan migrate:fresh --seed
 php artisan serve
+```
 
 
 # be-superindo
