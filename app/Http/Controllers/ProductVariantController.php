@@ -12,6 +12,14 @@ class ProductVariantController extends Controller
         return response()->json($product_variants);
     }
 
+    public function get_product($id) {
+        // Fetch ProductVariants where product_id matches the given $id and paginate the results
+        $product_variants = ProductVariant::where('product_id', $id)->paginate(5);
+        
+        // Return the paginated results as a JSON response
+        return response()->json($product_variants);
+    }
+
     public function store(Request $request) {
         $request->validate([
             'code' => 'required|string|max:255',
